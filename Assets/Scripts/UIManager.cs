@@ -14,6 +14,13 @@ public class UIManager : MonoBehaviour
 
     private bool juegoTerminado = false;
 
+    void Start()
+    {
+        if (panelVictoria != null) panelVictoria.SetActive(false);
+        if (panelDerrota != null) panelDerrota.SetActive(false);
+        UpdateScore(0);
+    }
+
     public void UpdateScore(int score)
     {
         if (scoreText != null)

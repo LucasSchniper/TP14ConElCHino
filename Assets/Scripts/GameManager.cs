@@ -3,11 +3,18 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public float timer = 60f;
+    private float tiempoInicial;
     private UIManager uiManager;
 
     void Awake()
     {
+        tiempoInicial = timer;
+    }
+
+    void Start()
+    {
         uiManager = FindObjectOfType<UIManager>();
+        uiManager.UpdateTimer(timer);
     }
 
     void Update()
@@ -29,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     public void JugadorGano()
     {
-        float tiempoUsado = 60f - timer;
+        float tiempoUsado = tiempoInicial - timer;
         timer = -1f;
         int seg = (int)(tiempoUsado % 60);
         int min = (int)(tiempoUsado / 60);

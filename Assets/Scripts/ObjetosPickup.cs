@@ -7,7 +7,7 @@ public class ObjetosPickup : MonoBehaviour
     private UIManager uiManager;
     private GameManager gameManager;
 
-    void Awake()
+    void Start()
     {
         uiManager = FindObjectOfType<UIManager>();
         gameManager = FindObjectOfType<GameManager>();
