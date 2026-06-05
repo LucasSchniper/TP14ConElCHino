@@ -8646,13 +8646,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: latacocaterminado
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 344a4342d6190a64d89ceb53fa332a51, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 344a4342d6190a64d89ceb53fa332a51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.53
+      value: -0.574
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 344a4342d6190a64d89ceb53fa332a51, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.97
+      value: 2.113
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 344a4342d6190a64d89ceb53fa332a51, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8702,6 +8706,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 14.103894
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 344a4342d6190a64d89ceb53fa332a51, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 015299910f283e547bc2e63d26adcffd, type: 2}
+    - target: {fileID: 2300000, guid: 344a4342d6190a64d89ceb53fa332a51, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 015299910f283e547bc2e63d26adcffd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 344a4342d6190a64d89ceb53fa332a51, type: 3}
 --- !u!1 &1302109831 stripped
@@ -11210,6 +11222,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalColectables: 1
+--- !u!114 &1750566938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750566931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e918fdd3d128f4ba364d4e99c29b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadGiro: 90
+  alturaRebote: 0.3
+  velocidadRebote: 2
 --- !u!1 &1763005561 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 46ad7a77aa403014ca16edb27a54c40e,
