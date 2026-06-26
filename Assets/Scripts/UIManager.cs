@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
     public void UpdateScore(int score)
     {
         if (scoreText != null)
-            scoreText.text = "Objetos: " + score;
+            scoreText.text = "Score: " + score;
     }
 
     public void UpdateTimer(float tiempo)
